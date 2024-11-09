@@ -11,8 +11,8 @@ const ProductCard = ({ product }) => {
 	};
 	return (
 		<>
-			<div className='card w-72 bg-base-100 p-5 shadow-xl'>
-				<figure className='w-full h-2/3 overflow-hidden rounded-lg '>
+			<div className=' w-80 bg-base-100 p-5 shadow-xl'>
+				<figure className='w-full h-64 overflow-hidden rounded-lg '>
 					<Image
 						className='object-fill w-full h-full'
 						priority={false}
@@ -22,10 +22,10 @@ const ProductCard = ({ product }) => {
 						height={1080}
 					/>
 				</figure>
-				<div className='card-body mt-3 flex flex-col  gap-2'>
+				<div className=' mt-3 flex flex-col  gap-2'>
 					<Link
 						href={`/product/${product.id}`}
-						className='h-24'>
+						className='h-20'>
 						<h2 className='text-sm'>{product.title}</h2>
 						<p>${product.price}</p>
 					</Link>
