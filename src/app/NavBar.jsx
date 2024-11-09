@@ -7,7 +7,7 @@ const NavBar = () => {
 	const { carts } = useContext(CartContext);
 	return (
 		<>
-			<div className='flex justify-between fixed top-0  left-0 text-white items-center  p-5 md:p-10 bg-black   w-full h-10'>
+			<div className='flex justify-between fixed top-0  left-0 text-white items-center  p-5 md:p-10 bg-black   w-full h-24'>
 				<div>
 					<Link href='/'>
 						<h1 className='text-2xl font-bold'>Next E-Commerce</h1>
