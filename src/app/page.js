@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <main>
-      <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 px-12 py-4 my-20 gap-10 md:gap-8 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-4 px-12 py-4 my-20 gap-10  ">
         {
           isLoading ? ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item) => (
             <Skeleton key={item} className="w-full h-[400px] rounded-lg " />

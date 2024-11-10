@@ -1,5 +1,5 @@
 "use client";
-import CartProvidert from "@/context/CartProvidert";
+import CartProvider from "@/context/CartProvider";
 import ProductProvider from "@/context/ProductProvider";
 import React from "react";
 import { QueryClient, QueryClientProvider } from "react-query";
@@ -10,7 +10,7 @@ const Provider = ({ children }) => {
 	return (
 		<QueryClientProvider client={quaryClient}>
 			<ProductProvider>
-				<CartProvidert>{children}</CartProvidert>
+				<CartProvider>{children}</CartProvider>
 			</ProductProvider>
 			<ReactQueryDevtools initialIsOpen={false} />
 		</QueryClientProvider>
