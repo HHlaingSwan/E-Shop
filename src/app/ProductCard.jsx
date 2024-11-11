@@ -11,8 +11,8 @@ const ProductCard = ({ product }) => {
 	};
 	return (
 		<>
-			<div className=' w-64  p-5 shadow-xl'>
-				<figure className='w-full h-64 overflow-hidden rounded-lg '>
+			<div className=' w-72  p-5 shadow-xl'>
+				<figure className='w-full h-64 overflow-hidden hover:scale-110 transition-all ease-out duration-300 rounded-lg '>
 					<Image
 						className='object-fill w-full h-full'
 						priority={false}
