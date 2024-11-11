@@ -18,9 +18,9 @@ const ShoppingCartList = ({ products }) => {
 				<div className='max-w-2xl mx-auto'>
 					{products.map((product) => (
 						<div
-							className='flex flex-row  justify-between items-center bg-white shadow-md rounded-lg my-5 p-5'
+							className='flex sm:flex-row  flex-col  justify-between items-center gap-4 bg-white shadow-md rounded-lg my-5 p-5'
 							key={product.id}>
-							<div className='flex gap-5 items-center w-2/3 '>
+							<div className='flex gap-5 items-center w-full md:w-2/3 '>
 								<img
 									src={product.image}
 									alt={product.title}
@@ -35,7 +35,7 @@ const ShoppingCartList = ({ products }) => {
 									</p>
 								</div>
 							</div>
-							<div className='flex justify-between items-center w-1/3 '>
+							<div className='flex justify-between items-center w-full md:w-1/3 '>
 								<ProductQuantityController product={product} />
 								<p className='font-semibold text-lg'>
 									${(product.price * product.quantity).toFixed(2)}

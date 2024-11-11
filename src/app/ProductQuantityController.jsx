@@ -12,7 +12,7 @@ const ProductQuantityController = ({ product }) => {
 	};
 	return (
 		<>
-			<div className='w-1/5 flex flex-col items-center gap-2 '>
+			<div className='w-1/5 flex flex-row sm:flex-col items-center gap-2 '>
 				<button
 					onClick={increaseHandler}
 					disabled={product.quantity === 15}
